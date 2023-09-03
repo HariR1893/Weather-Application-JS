@@ -88,8 +88,6 @@ async function getCurrentWeatherByLocation() {
 const currentLocationButton = document.querySelector(".current-location-button");
 currentLocationButton.addEventListener("click", getCurrentWeatherByLocation);
 
-// ... (previous code)
-
 // Function to show the weather information
 function showWeather() {
   document.querySelector(".weather").style.display = "block";
@@ -109,8 +107,7 @@ function hideWeatherAndError() {
 // Call hideWeatherAndError to initially hide the elements
 hideWeatherAndError();
 
-// Call fetchWeatherByLocation when the page loads
+// Call getCurrentWeatherByLocation when the page loads
 window.addEventListener("load", getCurrentWeatherByLocation);
 
-// ... (rest of the code)
 
